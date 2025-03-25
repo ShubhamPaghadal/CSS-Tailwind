@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jadoo</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- import tailwind here -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="app.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <script src="travel.js"></script>
+
+  <!-- header section -->
+  <header class="traveling-main-header  relative">
+    <div class="container  max-w-[1440px] m-auto px-[50px] block">
+      <div class="header-main-section">
+        <div class="header-main-menu   flex  items-center pt-6 justify-between ">
+          <div class="header-logo">
+            <img class="header-jadoo-img" src="IMG/Jadoo-header-logo.png" alt="" />
+          </div>
+          <div class="header-menu flex items-center gap-[33px] cursor-pointer ">
+
+            <ul class="flex text-center gap-[55px]">
+              <li class=" hover:text-[#212835] text-[17px] font-[400] ">Destinations</li>
+              <li class=" hover:text-[#212835] text-[17px] font-[400]">Hotels</li>
+              <li class=" hover:text-[#212835] text-[17px] font-[400]">Flights</li>
+              <li class=" hover:text-[#212835] text-[17px] font-[400]">Bookings</li>
+            </ul>
+            <a href="" class="header-login-btn  text-lg  bg-transparent  hover:text-[#212932]  font-medium">Logins</a>
+            <div class="sign-up-btn">
+              <a href=""
+                class="header-sign-up-btn hover:text-[#212932]  p-3  w-[102px]  h-[40px]  text-center bg-transparent  border">Sign
+                up</a>
+            </div>
+
+            <div class="header-language">
+              <select value="" class="header-option">
+                <option name="" id="">EN</option>
+              </select>
+            </div>
+          </div>
+          <!-- <div class="line-deco-h">    </div> -->
+          <button onclick="navigation()" class="toggle-btn text-lg  bg-[#ebebeb] py-[5px] px-[5px] hidden"><i
+              class="fas fa-bars"></i></button>
+        </div>
+      </div>
+
+      <!--************************************** section-1*************************************************** -->
+      <div class="section-1">
+        <div class="main-section-1  flex justify-center pt-[30px]">
+          <div class="left-col-1  w-[45%] mt-[112px]">
+            <p class="travel-top-text text-[20px] font-bold leading-[100%]  uppercase">Best destinations around the
+              world</p>
+            <div class="travel-header relative">
+              <h1
+                class="travel-header-new  text-[84px] font-[700] leading-[79%] tracking-[-4%] mt-[33px]  mb-[22px] font-serif ">
+                Travel, enjoy and live a new and full life
+              </h1>
+              <div class="decore-img absolute top-[66px] right-[-59px] z-[-1] ">
+                <img src="IMG/Decore.png" alt="" />
+              </div>
+            </div>
+            <div class="travel-header-text">
+              <p class="travel-text text-[16px] font-[400] leading-[30px]  ">
+                Built Wicket longer admire do barton vanity itself do in it.
+                Preferred to sportsmen it engrossed listening. Park gate sell
+                they west hard for the.
+              </p>
+            </div>
+            <div class="find-play flex justify-normal items-center gap-[10px]">
+              <div class="find-more">
+                <button
+                  class="find-more-btn w-[156px]  h-[50px]  bg-[#F1A501]  border-none rounded-lg  cursor-pointer">Find
+                  out more</button>
+              </div>
+              <div class="video-play flex justify-center items-center ">
+                <img class="video-play-img    cursor-pointer pt-[19px] " src="IMG/Play button.png" alt="" />
+                <p class="video-info cursor-pointer">play more</p>
+              </div>
+            </div>
+          </div>
+          <div class="right-col-1">
+            <div class="right-main-img-girl">
+              <img class="girl-main" src="IMG/girl.png" alt="" />
+            </div>
+            <div class="background-img  absolute top-[0] right-[0] z-[-1]  w-[50%]">
+              <img src="IMG/girl-background.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--************************************** END section-1*************************************************** -->
+
+  <!--**************************************  section-2*************************************************** -->
+
+  <div class="section-2">
+    <div class="container  max-w-[1440px] m-auto px-[50px] block">
+      <div class="main-row-2 mt-[100px] relative">
+        <div class="top-row-2">
+          <div class="category">
+            <p class="category-text text-[18px] font-[600] leading-[100%] text-center pb-[20px]   uppercase">category</p>
+          </div>
+          <div class="service">
+            <h1 class="service-text  text-[50px] font-[700] leading-[100%] text-center ">We Offer Best Services</h1>
+          </div>
+        </div>
+        <div class="bottom-row-2 flex justify-between items-center mt-[93px] w-[100%] ">
+          <div class="searvice-list  flex  flex-col w-[20%]  justify-center items-center p-[10px] hover:shadow-sm rounded-lg ">
+            <div class="weather-imges">
+              <img src="IMG/wheather.png" alt="" />
+            </div>
+            <div class="type-wheather">
+              <p class="wheather-text text-[20px] leading-[100%] font-[600] w-[190px] pt-[22px] pb-[22px]">Calculated Weather</p>
+            </div>
+            <div class="about-wheather">
+              <p class="about-wheather-text text-[16px] font-[400] leading-[26px] text-center ">
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+          <div class="searvice-list hover:shadow-sm rounded-lg flex  flex-col w-[20%]  justify-center items-center p-[10px">
+            <div class="Flights-imges w-[137px]">
+              <img src="IMG/flights.png" alt="" />
+            </div>
+            <div class="Flights-type">
+              <p class="Flights-text  text-[20px] leading-[100%] font-[600]  pb-[18px] ">Best Flights</p>
+            </div>
+            <div class="about-Flights">
+              <p class="about-Flights-text  text-[16px] font-[400] leading-[26px] ">
+                Engrossed listening. Park gate sell they west hard for the.
+              </p>
+            </div>
+          </div>
+          <div class="searvice-list hover:shadow-sm rounded-lg flex  flex-col w-[20%]  justify-center items-center p-[10px]">
+            <div class="events imges">
+              <img src="IMG/events.png" alt="" />
+            </div>
+            <div class="events-type">
+              <p class="events-text  text-[20px] leading-[100%] font-[600] pt-[22px] pb-[22px]">Local Events</p>
+            </div>
+            <div class="about-events">
+              <p class="about-events-tex   text-[16px] leading-[26px] font-[400] ">
+                Barton vanity itself do in it. Prefferd to men it engrossed
+                listening.
+              </p>
+            </div>
+          </div>
+          <div class="searvice-list flex  flex-col w-[20%]  justify-center items-center p-[10px]">
+            <div class="customization-imges">
+              <img src="IMG/customization.png" alt="" />
+            </div>
+            <div class="customization-type">
+              <p class="customization-text  text-20px leading-[100%] font-[600] pt-[22px] pb-[22px]" >Customization</p>
+            </div>
+            <div class="about-customization">
+              <p class="about-customization-text text-[16px] font-[400] leading-[26px]">
+                We deliver outsourced aviation services for military
+                customers.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="searvice-bg-img absolute top-[0] right-[-60px] ">
+          <img src="IMG/searvice-bg-im.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************** END section-2*************************************************** -->
+
+  <!--**************************************  section--3*************************************************** -->
+
+
+  <div class="section-3">
+    <div class="container    max-w-[1440px] m-auto px-[50px] block" >
+      <div class="main-sec-3">
+        <div class="top-row-3 mt-[123px]">
+          <div class=" top-selling">
+            <p class=" top-sell-text text-[18px] font-[600]  leading-[100%] text-center mb-[20px]   ">Top Selling</p>
+          </div>
+          <div class="service-top-des    pb-[60px] ">
+            <h1 class="  des-top-text text-[50px] font-[700] leading-[100%] text-center ">Top Destinations</h1>
+          </div>
+        </div>
+        <div class="destination--images flex justify-center items-center w-[100%] gap-x-[60px]">
+          <!-- <div class="destination-main-img">             
+              <img class="des-img" src="IMG/dec-1.png" alt="" />
+              <div class="des-name-price-days">
+                <div class="place-name-price">
+                  <p class="des-name  text-[18px] font-[400] leading-[125%] ">Rome, Itali</p>
+                  <p class="price">$5.42K</p>
+                </div>
+                <div class="trip-day">
+                  <img class="des-arrow" src="IMG/desti-arrow.png" alt="" />
+                  <p class="destination-day">10 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="destination-main-img">
+              <img class="des-img" src="IMG/dec-2.jpg" alt="" />
+              <div class="des-name-price-days">
+                <div class="place-name-price">
+                  <p class="des-name">Rome, Itali</p>
+                  <p class="price  text-[18px] leading-[125%] font-[400]   ">$5.42K</p>
+                </div>
+                <div class="trip-day">
+                  <img class="des-arrow" src="IMG/desti-arrow.png" alt="" />
+                  <p class="destination-day text-[16px] font-[400] leading-[125%]  ">10 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="destination-main-img">
+              <img class="des-img" src="IMG/dec-3.png" alt="" />
+              <div class="des-name-price-days">
+                <div class="place-name-price">
+                  <p class="des-name">Rome, Itali</p>
+                  <p class="price">$5.42K</p>
+                </div>
+                <div class="trip-day">
+                  <img class="des-arrow" src="IMG/desti-arrow.png" alt="" />
+                  <p class="destination-day">10 days</p>
+                </div>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************** END section-3*************************************************** -->
+  <!--**************************************  section-4*************************************************** -->
+
+  <div class="section-4">
+    <div class="container max-w-[1440px] m-auto px-[50px] block">
+      <div class="main-sec-4">
+        <div class="travel-trip-booking  flex mt-[186px]  justify-evenly  mb-[135px]">
+
+          <div class="book-step">
+            <p class="easy-text text-[18px] font-[600] leading-[100%] pb-[15px] ">Easy and Fast</p>
+            <h1 class="next-bokk-trip text-[50px]  font-[700]  leading-[100%] w-[511px] font-serif pb-[31px] " >Book Youre Next Trip In 3 Easy Steps</h1>
+            <div class="selet-des flex justify-start  items-center pb-[48px]  max-w-[70%] ">
+              <div class="selet-img">
+                <img src="IMG/book-1.png" alt="">
+              </div>
+              <div class="choose-info pl-[12px]">
+                <p class="des-info text-[16px] font-[700] leading-[125%]">Choose Destination</p>
+                <p class="info-text  text-[16px] font-400  leading-[125%] ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+              </div>
+
+            </div>
+            <div class="selet-des flex justify-start  items-center pb-[48px]  max-w-[70%]">
+              <div class="selet-img">
+                <img src="IMG/book-2.png" alt="">
+              </div>
+              <div class="choose-info  pl-[12px]">
+                <p class="des-info   text-[16px] font-[700] leading-[125%]">Choose Destination</p>
+                <p class="info-text  text-[16px] font-400  leading-[125%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+              </div>
+            </div>
+            <div class="selet-des flex justify-start  items-center pb-[48px]  max-w-[70%]">
+              <div class="selet-img">
+                <img src="IMG/book-3.png" alt="">
+              </div>
+              <div class="choose-info pl-[12px]">
+                <p class="des-info  text-[16px] font-[700] leading-[125%]">Choose Destination</p>
+                <p class="info-text  text-[16px] font-400  leading-[125%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. </p>
+              </div>
+            </div>
+          </div>
+          <div class="trip-view    hover:shadow-sm bg-[#f6f6f6] h-[394px] rounded-lg relative ">
+            <div class="view-main-sec">
+              <div class="place-img  pt-[20px] pr-[24px] pb-[26px] pl-[24px] ">
+                <img  class=" rounded-[24px] " src="IMG/place-img.jpg" alt="">
+              </div>
+              <div class="people-info pl-[25px]">
+                <h3 class="place-name font-[400] text-[18px] leading-[125%] pb-[13px]  "> Trip to Greece</h3>
+                <p class="trip-date  font-[400] text-[16px] leading-[125%] pb-[21px]">14-29 june by Robbin joseph</p>
+                <div class="trip-logos flex justify-left gap-[18px] items-center pb-[30px]">
+                  <div class="trip-log">
+                    <img src="IMG/trip-logo-1.png" alt="">
+                  </div>
+                  <div class="trip-log">
+                    <img src="IMG/trip-logo-2.png" alt="">
+                  </div>
+                  <div class="trip-log">
+                    <img src="IMG/trip-logo-3.png" alt="">
+                  </div>
+                </div>
+                <div class="going-status flex gap-[5px] pb-[29px]   ">
+                  <img src="IMG/people-chart.png" alt="">
+                  <p>24 people going</p>
+                </div>
+              </div>
+            </div>
+            <div class="ongoing-status  hover:shadow-sm  flex gap-[12px]  w-[263px] bg-[#f3f3f3] absolute right-[-125px] bottom-[69px]  pt-[16px] pb-[16px] pr-[22px] pl-[20px] rounded-lg">
+              <div class="trip-location">
+                <img class="location-img" src="IMG/location-img.png" alt="">
+              </div>
+              
+              <div class="status-view">
+                <p class="status-text  text-[14px] font-[400] leading-[125%]  tracking-[-3.5%] text-[#84829A] ">Ongoing</p>
+                <h5 class="home-stutus text-[18px]   leading-[125%] font-[400] pt-[6px] pb-[14px] ">trip to home</h5>
+                <p class="complete-status  text-[14px]  font-[400] leading-[125%] tracking-[-5.5%] pb-[10px] ">40% compleate</p>
+                <div class="status-line-through">
+                  <div class="paln-line  w-[156px] h-[5px]  bg-[#cecaca] relative"></div>
+                  <div class="color-line w-[73px] h-[5px] bg-[#8A79DF] absolute left-[35px]  top-[103px]   "></div>
+                </div>
+              </div>
+            </div>
+            <div class="status-bg-im  absolute top-[-136px] right-[-123px] z-[-1] bg-opacity-80    ">
+              <img src="IMG/back-blue.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************** END section-4*************************************************** -->
+
+  <!--************************************** section-5*************************************************** -->
+  <div class="section-5">
+    <div class="container   max-w-[1440px] m-auto px-[50px] block  ">
+      <div class="main-sec-5  flex justify-around">
+        <div class="about-people-review">
+          <p class="testination   text-[18px]  font-[600] leading-[100%]  pb-[8px] ">TESTIMONIALS</p>
+          <h1 class="peoplw-header text-[50px]  font=[700]  leading-[100%] w-[409px]  ">What people say
+            about Us.</h1>
+        </div>
+        <div class="img-and-people-ask   hover:shadow-sm  w-[504px] bg-[#f9f7f5]  relative  pt-[28px] pr-[68px] pl-[34px] rounded-lg ">
+          <p class="about-trip-text   tetx-[16px] leading-[32px]  font-[400]    ">“On the Windows talking painted pasture yet its express parties use. Sure last upon
+            he same as knew next. Of believed or diverted no.”</p>
+          <p class="name-reviewver tetx-[18px] font-[600]  leading-[100%]  pt-[34px] pb-[5px]   ">Mike taylor</p>
+          <p class="reviwver-location  texr-[14px]  leading-[100%]  font-[400] pb-[34px]  ">Lahore, pakistan</p>
+          <div class="people-img  absolute top-[-38px] left-[-41px]">
+            <img src="IMG/abiout-review.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--************************************** END section-5*************************************************** -->
+
+  <!--**************************************  section-6*************************************************** -->
+
+  <div class="section-6 inline-block  align-top  w-[100%]">
+    <div class="container-com-logo ">
+      <div class="main-sec-6   mt-[100px] mb-[100px]   ">
+        <div class="slick-slider animate-bounce  flex w-[calc(89 * 18)]  items-center gap-[77px] justify-center  animate-(scroll  20s linear infinite ) " >
+          <div class="com-logo-1 grayscale-[1] hover:grayscale-0 ">
+            <img class="all-com-logo" src="IMG/compsny-logo-1.png" alt="">
+          </div>
+          <div class="com-logo-1  grayscale-[1]  hover:grayscale-0    ">
+            <img class="all-com-logo" src="IMG/compsny-logo-2.png" alt="">
+          </div>
+          <div class="com-logo-1  grayscale-[1]  hover:grayscale-0  ">
+            <img class="all-com-logo" src="IMG/compsny-logo-3.png" alt="">
+          </div>
+          <div class="com-logo-1  grayscale-[1]  hover:grayscale-0  ">
+            <img class="all-com-logo" src="IMG/compsny-logo-4.png" alt="">
+          </div>
+          <div class="com-logo-1  grayscale-[1]  hover:grayscale-0  ">
+            <img class="all-com-logo" src="IMG/compsny-logo-5.png" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************** END section-6*************************************************** -->
+
+
+
+  <!--**************************************  section-7*************************************************** -->
+  <div class="section-7">
+    <div class="container    max-w-[1440px] m-auto px-[50px] block">
+      <div class="main-sec-7">
+        <div class="main-in-field  w-[1170px]  bg-[#e5dfdf] pt-[79px] pr-[144px] pl-[145px]  relative   rounded-t-[50px] ">
+          <p class="info-em-sub  text-[33px] font-[600] leading-[54px] text-center text-[#5E6282]  ">Subscribe to get information, latest news and other
+            interesting offers about Jadoo</p>
+          <div class="input-sec  pt-[74px] pb-[78px] text-center flex justify-center gap-[24px] ">
+            <div class="mn-in-div relative z-[1]  ">
+              <input type="email" class="in-email  bg-[white]  w-[421px] h-[68px]  text-[#39425D] text-[14px]  font-[400] leading-[100%] border-none  rounded-lg  pl-[69px]    " name="" id="" placeholder="Youre Email">
+              <div class="email-logo  absolute bottom-[20px] left-[35px]  cursor-pointer  ">
+                <img src="IMG/email.png" alt="">
+              </div>
+            </div>
+            <button class="sub-btn hover:bg-[#FF7D68]   w-[180px] h-[68px] bg-[#FF946D] border-none rounded-lg  tetxt-[white]  cursor-pointer " >Subscribe</button>
+
+          </div>
+          <div class="msg-logo absolute  top-[-26px] right-[-30px]  cursor-pointer "><img src="IMG/msg-logo.png" alt=""></div>
+          <div class="start-deco  absolute right-[-93px]  bottom-[-73px]     "><img src="IMG/star-deco.png" alt=""></div>
+          <div class="ring-deco  absolute right-[0]  top-[0]  opacity-[0.1]   "><img src="IMG/ring-deco.png" alt=""></div>
+          <div class="left-ring-deco  absolute bottom-[0]  left-[0]  opacity-[0.1] "><img src="IMG/left-deco-ring.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--************************************** END section-7*************************************************** -->
+
+
+  <footer>
+    <div class="container max-w-[1440px] m-auto px-[50px] block">
+      <div class="fotter-main-section   flex justify-around pt-[166px] pr-[140px] pl-[139px]">
+        <div class="footer-heading max-w-[20%] pr-[32px]">
+          <h1 class="footer-heading-text  text-[44px] font-[400] leading-[100%] hover:text-[#181E4B] pb-[50px]  ">jadoo.
+          </h1>
+          <p class="footer-h-p text-[13px] leading-[125%] font-[400]  ">Book your trip in minute, get full
+            Control for much longer.
+          </p>
+        </div>
+        <div class="company-all-  flex justify-center  gap-[91px] w-[50%] max-w-[60%]">
+          <div class="company-list  ">
+            <div class="company-header">
+              <h1 class="company-header-text text-[21px] font-[700] leading-[125%] mb-[36px]">Company</h1>
+            </div>
+            <div
+              class="comapny-link  flex  flex-col justify-center items-center font-[18px] leading-[125%] font-[400] gap-[17px]">
+              <a class="footer-link" href="">About</a>
+              <a class="footer-link" href="">Careers</a>
+              <a class="footer-link" href="">Mobile</a>
+            </div>
+
+          </div>
+          <div class="comapny-contact ">
+            <div class="contact-header">
+              <h1 class="contact-header-text text-[21px] font-[700] leading-[125%] mb-[36px] ">Contact</h1>
+            </div>
+            <div
+              class="comapny-link  flex  flex-col justify-center items-center font-[18px] leading-[125%] font-[400] gap-[17px]">
+              <a class="footer-link/FAQ" href="">Help/FAQ</a>
+              <a class="footer-link" href="">Press</a>
+              <a class="footer-link" href="">Affiliates</a>
+            </div>
+
+
+
+          </div>
+          <div class="company-more-info">
+            <div class="info-header">
+              <h1 class="info-header-text text-[21px] font-[700] leading-[125%] mb-[36px]">More</h1>
+            </div>
+            <div
+              class="comapny-link  flex  flex-col justify-center items-center font-[18px] leading-[125%] font-[400] gap-[17px]">
+              <a class="footer-link" href="">Airlinefees</a>
+              <a class="footer-link" href="">Airline</a>
+              <a class="footer-link" href="">Airlie</na>
+            </div>
+          </div>
+        </div>
+        <div class="copany-social-media-app  ">
+          <div class="comapny-social-media text-center flex justify-center items-center pr-[20px]  cursor-pointer">
+            <img class="facebook h-[41px] w-[41px] " src="IMG/facebook.png" alt="">
+            <img class="instagram w-[45px] mr-[5px] ml-[11px]" src="IMG/instagram.png" alt="">
+            <img class="twitter h-[41px] w-[41px]  " src="IMG/twitter.png" alt="">
+
+          </div>
+          <div class="discover">
+            <p class="discover-text text-[20px] leading-[125%] mt-[10px] mb-[10px] w-[150px] ml-[20px]">Discover our app</p>
+          </div>
+          <div class="company-app-avalible   flex items-center gap-x-[16px] cursor-pointer ">
+            <div class="playstore">
+              <img class="play-store-logo max-w-[107px]" src="IMG/Google Play.png" alt="">
+            </div>
+            <div class="appstore">
+              <img class="app-store-logo max-w-[107px]" src="IMG/Play Store.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="jadoo-com">
+        <p class="all-rights  font-[14px] font-[400] font-[125%] text-center mt-[41px]">
+          All rights reserved@jadoo.co
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- <script>
+    $(".slick-slider").slick({
+   slidesToShow: 3,
+   infinite:false,
+   slidesToScroll: 1,
+   autoplay: true,
+   autoplaySpeed: 2000
+     // dots: false, Boolean
+    // arrows: false, Boolean
+  }); -->
+
+
+  <script>
+    const navigation = () => {
+      const navbar = document.querySelector('.header-menu')
+      navbar.classList.toggle('active')
+      if (navbar.style.display === "none") {
+        navbar.style.display = "block"
+      }
+      else {
+        navbar.style.display = "none"
+      }
+    }
+
+    const all_area = [
+      {
+        img: 'IMG/dec-1.png',
+        tittle: 'Rome, Itali',
+        price: '$5.42K',
+        days: '10 days Trip',
+        arrow: 'IMG/desti-arrow.png'
+      },
+      {
+        img: 'IMG/dec-2.jpg',
+        tittle: 'London, UK',
+        price: '$4.2k',
+        days: '12 Days Trip',
+        arrow: 'IMG/desti-arrow.png'
+      },
+      {
+        img: 'IMG/dec-3.png',
+        tittle: 'Full Europe',
+        price: '$15K',
+        days: '28 Days Trip',
+        arrow: 'IMG/desti-arrow.png'
+      }
+    ]
+
+    const get_item = document.querySelector('.destination--images')
+    all_area.map(item => {
+      get_item.innerHTML +=
+        `
+             <div class="destination-main-img   relative shadow-lg  rounded-lg">             
+              <img class="des-img rounded-[17px] cursor-pointer " src=${item.img} alt="" />
+              <div class="des-name-price-days absolute w-[100%] bottom-[0] p-[30px] bg-[white]  rounded-b-[5px] ">
+                <div class="place-name-price  flex  items-center gap-[103px]  pb-[19px]">
+                  <p class="des-name">${item.tittle}</p>
+                  <p class="price">${item.price}</p>
+                </div>
+                <div class="trip-day  flex gap-y-[14px]">
+                   <img class='des-arrow' src=${item.arrow} alt="" />
+                  <p class="destination-day">${item.days}</p>
+                </div>
+              </div>
+            </div>`
+    })
+
+    // const place_arr = [
+    //   {
+    //     img: dsfsd,
+    //   }
+    // ]
+
+    // const mapping = document.querySelector('.destination--images')
+    // console.log('mapping')
+
+  </script>
+</body>
+
+</html>

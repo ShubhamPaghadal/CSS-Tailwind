@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-fade-in-scale: scroll  20s linear infinite ;
+  @keyframes fade-in-scale {
+    0%{
+        transform: translateX(10);
+    }
+    100%{
+        transform: translateX(calc(-100px * 10));
+    }
+  }
+}
