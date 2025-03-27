@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
-@theme {
-  --animate-fade-in-scale: scroll  20s linear infinite ;
-  @keyframes fade-in-scale {
+ 
+  @keyframes scrollAnimation {
     0%{
-        transform: translateX(10);
+        transform: translateX(0);
     }
     100%{
-        transform: translateX(calc(-100px * 10));
+        transform: translateX(-100%);
     }
   }
-}
+
+  .slick-slider{
+    animation: scrollAnimation  20s linear infinite ;
+  }
